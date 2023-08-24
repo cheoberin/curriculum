@@ -78,7 +78,6 @@
 }
 
 .section__item {
-    width: 100%;
     font-family: var(--font-text);
     color: var(--color-text);
     text-align: justify;
@@ -211,6 +210,18 @@
 
 .spaced{
     margin-left: 7rem;
+}
+
+.skill__description{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 0.5rem;
+}
+
+.skill_icon{
+    width: 1rem;
+    height: 1rem;
 }
 
 @media (max-width: 1000px){
