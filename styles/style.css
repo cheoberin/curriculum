@@ -23,6 +23,7 @@
 .main {
     display: grid;
     grid-template-columns: 30% 70%;
+    transition: all 1s;
 }
 
 .main__aside {
@@ -210,4 +211,13 @@
 
 .spaced{
     margin-left: 7rem;
+}
+
+@media (max-width: 1000px){
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        transition: all 1s;
+    }
 }
