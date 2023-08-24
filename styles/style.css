@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --color-blackground: #1E2A3A;
+    --color-section: #34495E;
+    --color-border: #95A5A6;
+    --color-text: #ECF0F1;
+    --color-button: #2C3E50;
+    --color-section-hover: #2E4053;
+    --color-bar-hover: #FF0000;
+
+    --font-title: 'Roboto', sans-serif;
+    --font-text: 'Poppins', sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.main__aside {
+    background-color: var(--color-blackground);
+}
+
+.aside__section {
+    background-color: var(--color-section);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    transition: background-color 0.3s;
+    border: 1px solid var(--color-border);
+}
+
+.aside__section:hover {
+    background-color: var(--color-section-hover);
+    transition: background-color 0.5s;
+}
+
+.section__photo {
+    width: 50%;
+    border-radius: 50%;
+    border: var(--color-border) solid 0.3rem;
+
+}
+
+.section__title {
+    font-family: var(--font-title);
+    color: var(--color-text);
+    width: 100%;
+    text-align: center;
+}
+
+.section__subtitle {
+    width: 100%;
+    font-family: var(--font-title);
+    color: var(--color-text);
+    text-align: start;
+}
+
+.section__text {
+    width: 100%;
+    font-family: var(--font-text);
+    color: var(--color-text);
+    text-align: justify;
+}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+.section__list {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__div {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.list__item:hover {
+    background-color: var(--color-section);
+    transition: background-color 0.5s;
+}
+
+.item__logo {
+    width: 5rem;
+}
+
+.section__grid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.section__button {
+    text-decoration: none;
+    font-family: var(--font-text);
+    color: var(--color-text);
+    background-color: var(--color-button);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    border: 1px solid var(--color-border);
+}
+
+.section__button:hover {
+    background-color: var(--color-text);
+    color: var(--color-blackground);
+    transition: background-color color 0.5s;
+}
+
+.button__icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.main__content {
+    background-color: var(--color-blackground);
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill__progress {
+    width: 12.3rem;
+    height: 1rem;
+    background-color: var(--color-border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill__progress:hover .skill__progress__bar {
+    background-color: var(--color-bar-hover);
+}
+
+.skill__progress__bar {
+    height: 100%;
+    background-color: var(--color-blackground);
+    transition: background-color 0.3s;
+}
+
+.skill__progress__bar:hover {
+    background-color: var(--color-bar-hover);
+    transition: background-color 0.5s;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.item__split {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
