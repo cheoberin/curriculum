@@ -231,4 +231,8 @@
         flex-direction: column;
         transition: all 1s;
     }
+
+    .spaced{
+        margin-left: 0rem;
+    }
 }
